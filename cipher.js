@@ -28,8 +28,22 @@ function runCipher() {
             .split("")
             .map(char => {
                 const pos = alphabet.indexOf(char);
-                return pos >= 0 ? alphabet[(parseInt(pos) + parseInt(val)) % 26] : char;
+                if (val >= 0) {
+                    return pos >= 0 ? alphabet[(parseInt(pos) + parseInt(val)) % 26] : char;
+                } else {
+                    const newpos = parseInt(pos) + parseInt(val);
+                    if (alphabet.includes(char)) {
+                        return newpos >= 0 ? alphabet[newpos] : alphabet[alphabet.length + (newpos % 26)];
+                    } else {
+                        return char;
+                    }
+                }
+
             })
+            // .map(char => {
+            //     const pos = alphabet.indexOf(char);
+            //     return pos >= 0 ? alphabet[(parseInt(pos) + parseInt(val)) % 26] : char;
+            // })
             .join("");
     };
 };
