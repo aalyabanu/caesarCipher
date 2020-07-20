@@ -1,3 +1,10 @@
+document.querySelector("h1").style.cssText = "color:green; font-size:40px; text-align:centre; font-family:Georgia, serif; "
+$("body").css("background-color", "	#FFDAB9");
+$("i.fa.fa-key.icon").css({
+    'padding': '9px',
+    'background': 'green',
+    'color': 'white',
+});
 
 function runCipher() {
     let userString = document.getElementById("userMessage").value;
@@ -40,15 +47,9 @@ function runCipher() {
                 }
 
             })
-            // .map(char => {
-            //     const pos = alphabet.indexOf(char);
-            //     return pos >= 0 ? alphabet[(parseInt(pos) + parseInt(val)) % 26] : char;
-            // })
             .join("");
     };
 };
-
-
 
 
 

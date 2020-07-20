@@ -1,12 +1,12 @@
 {
   "name": "caesarcipher",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple implementation of the Caesar Cipher technique for encoding and decodong text message.",
   "main": "CaesarCipher.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "",
+  "author": "Aalya Banu",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "^7.10.4",

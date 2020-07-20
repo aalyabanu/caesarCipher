@@ -1,3 +1,4 @@
+
 function cipherfunct(str, val) {
     console.log("orig str: ", str);
     str = str.toUpperCase(str);
