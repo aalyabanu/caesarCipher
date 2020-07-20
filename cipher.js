@@ -4,7 +4,31 @@ $("i.fa.fa-key.icon").css({
     'padding': '9px',
     'background': 'green',
     'color': 'white',
+    'margin-top': '10px',
+    'border- radius': '0.5em',
 });
+
+$(".fa").css({
+    'border-radius': '0.5em',
+    'margin-right': '10px',
+})
+
+$(".btn-success").css({
+    'margin-right': '30px',
+    'margin-bottom': '20px',
+
+})
+
+$(".jumbotron").css({
+    'padding': "2rem 1rem",
+    'margin-top': '30px',
+    'background-color': '#E9EBBB',
+    'border-radius': '0.5rem',
+})
+
+$(".page-footer").css({
+    'font-family': 'cursive',
+})
 
 function runCipher() {
     let userString = document.getElementById("userMessage").value;

@@ -19,7 +19,8 @@
         </div>
         <div class="container">
             <p> The Caesar cipher, also known as shift cipher is one of the oldest and most famous ciphers in history.
-                In this text conversion tool you can either encode or decode text by entering the value of the key. All
+                In this text conversion tool using Caesar Cipher, you can either encode or decode text by entering the
+                value of the key. All
                 non-alphabetic characters and spaces will remain unchanged.
             </p>
             <div class="jumbotron">
@@ -28,21 +29,24 @@
                     <textarea class="form-control text-monospace" rows="4" id="userMessage" oninput="runCipher()"
                         placeholder="Enter message here..."></textarea>
                     <br />
-                    <p>
-                        <button id="encode" class="btn btn-success mt-1" onclick="runCipher();">Encode</button>
-                        <button id="decode" class="btn btn-success mt-1" onclick="runCipher();">Decode</button>
-                    <div class="form-group ">
-                        <i class="fa fa-key icon"></i>
-                        <input type="number" id="userKey" min="0" placeholder="Enter key..." value=0
-                            onchange="runCipher()" />
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4">
+                            <button id="encode" class="btn btn-success mt-1 " onclick="runCipher();">Encode</button>
+                            <button id="decode" class="btn btn-success mt-1" onclick="runCipher();">Decode</button>
+                        </div>
+                        <div class="col-md-8 col-lg-8">
+                            <i class="fa fa-key icon"></i>
+                            <input type="number" id="userKey" min="0" placeholder="Enter key..." value=0
+                                onchange="runCipher()" />
+                        </div>
                     </div>
-                </div>
+                </div> <!-- form-goup-->
                 <div class="form-group ">
                     <label for="result"> Result: </label><br />
                     <textarea class="form-control text-monospace" id="result" rows="4"></textarea>
                 </div>
             </div>
-            </p>
+
 
         </div> <!-- container-->
     </div>
@@ -52,7 +56,7 @@
 
     <footer class="page-footer">
         <div class="container-fluid text-white text-center my-3">
-            Designed by Aalya
+            Designed by Aalya Banu
         </div>
     </footer>
 
