@@ -28,6 +28,7 @@ $(".jumbotron").css({
 
 $(".page-footer").css({
     'font-family': 'cursive',
+    'color':'green'
 })
 
 function runCipher() {
